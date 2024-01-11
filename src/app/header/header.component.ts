@@ -6,9 +6,15 @@ import { AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit,
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit, AfterContentInit, AfterViewInit, OnDestroy, OnChanges, AfterContentChecked, DoCheck, AfterViewChecked {
+  pageTitle = "MY APP";
   constructor(){
     console.log('Constructor ejecutado')
   }
+
+  onDataCheck(e:any){
+    console.log(e);
+  }
+
   ngOnInit(): void {
     console.log('ngOnInit ejecutado')
   }
